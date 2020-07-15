@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "m+pQg/qZeZcpl2DbMw759uOc+zHw+m8OfEHUXzzWt8fZA6GgvHjT1eh+btMooslFjMFCPHKPwrrfhcWoA6F9Aw==",
+  "success": true,
+  "projectFilePath": "C:\\Documents\\Code\\ClnWebTransform\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dodok\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
