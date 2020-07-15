@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Documents\Code\ClnWebTransform\Web\Web.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\AutoMapper\**" />
+    <Content Remove="Features\AutoMapper\**" />
+    <EmbeddedResource Remove="Features\AutoMapper\**" />
+    <None Remove="Features\AutoMapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\GetCountController.cs" />
+    <Compile Remove="Controllers\TestController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Features\Events\PostedRaportEvent.cs" />
+    <Compile Remove="Features\Handler\PostDataCountHandler.cs" />
+    <Compile Remove="Features\Subcribers\PostedRaportHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Service\AppConfigService.cs~RF6880c5f.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Events\" />
+    <Folder Include="Features\Subcribers\" />
+  </ItemGroup>
+
+
+</Project>

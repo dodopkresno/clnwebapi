@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web</name>
+    </assembly>
+    <members>
+        <member name="M:Web.Controllers.AccountController.Authenticate(Web.ViewModel.AuthenticateModel)">
+            <summary>
+            Generate Bearer Token API.
+            </summary>
+            <param name="model"></param>
+            <returns>Data Account.</returns>
+            <response code="401"> Access Unauthorized</response>
+        </member>
+        <member name="M:Web.Controllers.MasterMapController.MyMapMaster">
+            <summary>
+            Menampilkan Mapping COA PT TPS
+            </summary>
+            <returns>Data Mapping</returns>
+        </member>
+    </members>
+</doc>
